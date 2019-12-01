@@ -1,0 +1,27 @@
+{
+  "name": "store-api",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindk-red-frog/store-api.git"
+  },
+  "keywords": [
+    "api",
+    "rest"
+  ],
+  "author": "red-frog team: Vladyslav-K, kirnozss, alexandrxomenko, obvadov, msbabenko, InnaSokura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mindk-red-frog/store-api"
+  },
+  "homepage": "https://github.com/mindk-red-frog/store-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
