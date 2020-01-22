@@ -2,13 +2,19 @@ const express = require("express");
 const app = express();
 const port = 3005;
 
-const products = require("./routes/products");
-const orders = require("./routes/orders");
-const users = require("./routes/users");
+const products = require("./routes/productRouter");
+const orders = require("./routes/orderRouter");
+const users = require("./routes/userRouter");
+
+const roles = require("./routes/roleRouter");
+const categories = require("./routes/categoryRouter");
 
 app.use("/products", products);
 app.use("/orders", orders);
 app.use("/users", users);
+
+app.use("/roles", roles);
+app.use("/categories", categories);
 
 app.get("/", (req, res) => {
   res.header("Cache-Control", "no-cache, no-store, must-revalidate");
